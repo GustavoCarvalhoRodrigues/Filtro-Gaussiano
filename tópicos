@@ -1,1 +1,6 @@
+import cv2
+
+def aplicar_filtro_gaussiano(imagem, desvio_padrao):
+    imagem_filtrada = cv2.GaussianBlur(imagem, (0, 0), desvio_padrao)
+    return imagem_filtrada
 
